@@ -1,0 +1,17 @@
+# Node.js modules
+node_modules/
+npm-debug.log
+yarn.lock
+.env
+
+# Editor files
+.vscode/
+.idea/
+
+# Build files
+dist/
+build/
+
+# Logs
+logs/
+*.log
