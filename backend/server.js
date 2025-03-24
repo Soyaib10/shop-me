@@ -6,7 +6,8 @@ import cookieParser from "cookie-parser";
 import authRoutes from "./routers/auth.route.js"
 import productRoutes from "./routers/product.route.js"
 import cartRoutes from "./routers/cart.route.js"
-
+import couponRoutes from "./routers/coupon.route.js"
+import paymentRoutes from "./routers/payment.route.js"
 dotenv.config();
 
 const app = express();
@@ -18,6 +19,8 @@ app.use(cookieParser())
 app.use("/api/auth", authRoutes)
 app.use("/api/products", productRoutes)
 app.use("/api/cart", cartRoutes)
+app.use("api/coupon", couponRoutes)
+app.use("/api/payments", paymentRoutes);
 
 app.listen(PORT, () => {
 	console.log("Server is running on http://localhost:" + PORT);
