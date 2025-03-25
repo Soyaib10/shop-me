@@ -30,7 +30,7 @@ export const getFeaturedProducts = async (req, res) => {
     } catch (error) {
         console.log("Error in get featured products", error.message)
         res.status(500).json({message: "server error", error: error.message})
-    }
+    }   
 }
 
 export const createProduct = async (req, res) => {
